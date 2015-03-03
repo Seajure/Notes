@@ -1,0 +1,66 @@
+
+* February 2015
+  We tried to create a simple web application that echo's messages
+  (dare I say, a "twitter clone"?...well, not even close, actually.)
+
+  Code is at https://github.com/Seajure/echo.
+
+  Below is a snippet I saved from an earlier attempt:
+
+  #+BEGIN_SRC clojure
+
+  (defonce hollas (atom []))
+
+  (defn layout [title & body]
+    (html5
+     [:head
+      [:meta {:charset "UTF-8"}]
+      [:title title]]
+     [:body
+      [:div.container {}
+       body]]))
+
+  (defn holla-form []
+    (form/form-to [:post "/"]
+                  (form/label "holla" "What do you want to holler?")
+                  (form/text-area "holla")
+                  (form/submit-button "Holla!")))
+
+  (defn display-hollas [hollas]
+    [:ul
+     (for [holla hollas]
+       [:li {} holla])])
+
+  (defn index []
+    (layout "Holla"
+            (holla-form)
+            [:div {:class "clear"}]
+            (display-hollas @hollas)))
+
+  (defn add-holla [holla]
+    (swap! hollas conj holla)
+    (index))
+
+  (defroutes routes
+    (GET "/" [] (index))
+    (POST "/" [holla] (add-holla holla)))
+
+  (def app (handler/site routes))
+
+  (defn start [port]
+    (ring/run-jetty app {:port port :join? false}))
+
+  (defn -main []
+    (let [port (Integer. (or (System/getenv "PORT") "8080"))]
+      (start port)))
+
+
+
+  #+END_SRC
+* March 2015
+  We're planning on going over Marcus M's Star Trek port: https://github.com/marcusm/startrek-clojure
+
+  - I've forked it into [[https://github.com/Seajure/startrek-clojure][the org]], in case we make any changes we want to keep.
+
+** Links
+   - [[http://www.pluralsight.com/courses/description/functional-programming-clojure][Phil's Peep Code video]], which covers making a game in clojure.
