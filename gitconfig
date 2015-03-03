@@ -1,0 +1,26 @@
+[user]
+    name = Seajure Swarm
+    email = seajure@pobox.com
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+[push]
+    default = tracking
+[diff "clojure"]
+    xfuncname = "^\\(.*"
+[alias]
+    st = status
+    shorten = "!sh -c 'curl -i http://git.io -F url=$1' -"
+    l = log --no-merges
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    lc = log ORIG_HEAD.. --stat --no-merges
+    lol = log --graph --decorate --pretty=oneline --abrev-commit
+    lola = log --graph --decorate --pretty=oneline --abrev-commit --all
+    ll = log --graph --date=short
+    co = checkout
+    c = commit -v
+    cim = !git commit -m "${1}"
+    pull = pull --ff-only
+    amend = commit --amend
