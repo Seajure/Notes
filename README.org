@@ -1,3 +1,14 @@
+#+TITLE: Seajure Meetup Notes
+#+AUTHOR: Seajure
+#+EMAIL: seajure@pobox.com
+#+OPTIONS: toc:3 num:nil
+#+STYLE: <link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-light.min.css" />
+
+* Intro
+
+These are notes from our meetups. If we talk about a good tool or
+library, I'll try and add a link here. Feel free to add your own
+notes.
 
 * February 2015
   We tried to create a simple web application that echo's messages
@@ -57,14 +68,18 @@
 
 
   #+END_SRC
-* March 2015
-  We're planning on going over Marcus M's Star Trek port:
-  https://github.com/marcusm/startrek-clojure
 
+* March 2015
+
+  We're planning on going over Marcus M's Star Trek port.
+
+  - [[http://www.reddit.com/r/Clojure/comments/2x6gce/ported_the_classic_startrek_game_to_clojure/][Reddit discussion]]
+  - https://github.com/marcusm/startrek-clojure
   - I've forked it into [[https://github.com/Seajure/startrek-clojure][the org]], in case we make any changes we want to keep.
   - UPDATE: I committed the changes we made, if anyone wants to see them.
 
 ** Links
+   - [[http://puzzles.com/products/RushHour/RHfromMarkRiedel/Jam.html][Rush Hour game]] like the one Mark Engelberg made.
    - [[http://www.pluralsight.com/courses/description/functional-programming-clojure][Phil's Peep Code video]], which covers making a game in clojure.
    - [[http://stevelosh.com/blog/2012/07/caves-of-clojure-01/][Caves of Clojure]]
    - [[http://www.braveclojure.com/][Clojure for the Brave and True]]
