@@ -58,9 +58,18 @@
 
   #+END_SRC
 * March 2015
-  We're planning on going over Marcus M's Star Trek port: https://github.com/marcusm/startrek-clojure
+  We're planning on going over Marcus M's Star Trek port:
+  https://github.com/marcusm/startrek-clojure
 
   - I've forked it into [[https://github.com/Seajure/startrek-clojure][the org]], in case we make any changes we want to keep.
+  - UPDATE: I committed the changes we made, if anyone wants to see them.
 
 ** Links
    - [[http://www.pluralsight.com/courses/description/functional-programming-clojure][Phil's Peep Code video]], which covers making a game in clojure.
+   - [[http://stevelosh.com/blog/2012/07/caves-of-clojure-01/][Caves of Clojure]]
+   - [[http://www.braveclojure.com/][Clojure for the Brave and True]]
+   - [[https://github.com/clojure/tools.trace][clojure.tools.trace]]
+   - [[https://github.com/AlexBaranosky/print-foo][print-foo]]
+   - [[https://github.com/stuartsierra/component][Stuart Sierra's Component project on github]]
+   - [[http://thinkrelevance.com/blog/2013/06/04/clojure-workflow-reloaded]["My Clojure Workflow, Reloaded", Stuart Sierra's Blog]]
+
